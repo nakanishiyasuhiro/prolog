@@ -1,0 +1,27 @@
+@import "reset";
+@import "users";
+@import "tops";
+@import "programminglogs";
+
+
+
+
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+footer p{
+  margin-bottom: 0;
+}

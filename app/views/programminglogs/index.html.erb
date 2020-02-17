@@ -1,0 +1,55 @@
+<div class="index-page">
+<header>
+  <%= link_to "ログイン", new_user_session_path, class: "header__right--btn" %>
+  <%= link_to "新規登録", new_user_registration_path, class: "header__right--btn" %>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/programminglogs">Prolog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/programminglogs/new">新規投稿</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</header>
+
+  <div class="index-page__main">
+    <div class="prolog-toppage">
+      <p>投稿一覧ページ</p>
+    </div>
+
+    <div class="texts">
+      <div class="text">
+        <% @programminglogs.each do |prolog|%>
+          <div class="textonly">
+            <div class="text__left">
+              <div class="text__image" style="background-image: url(<%= prolog.image %>);"></div>
+            </div>
+            <div class="text__right">
+              <div class="text__title">
+                <%= link_to prolog.title, programminglog_path(prolog.id), class: "content__right__top--title" %>
+              </div>
+            </div>
+            <div class="text__bottom">
+              <div class="text__time">
+                <%= prolog.created_at %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

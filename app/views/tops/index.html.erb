@@ -1,0 +1,18 @@
+<div class="top-page"> 
+  <div class="toptext">
+    <div class="top-page-title">
+      <p>Prolog.</p>
+    </div>
+    <div class="top-page-text">
+    <p>ようこそ！<br>このアプリは、プログラミングの学習を頑張るあなたをサポートします！</p>
+    </div>
+    <div class="top-page-text">
+      <% if user_signed_in? %>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right--btn" %>
+      <% else %>
+        <%= link_to "ログイン", new_user_session_path, class: "header__right--btn" %>
+        <%= link_to "新規登録", new_user_registration_path, class: "header__right--btn" %>
+      <% end %>
+    </div>
+  </div>
+</div>
