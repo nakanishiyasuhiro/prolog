@@ -1,37 +1,39 @@
 // 投稿ページ
 
-// ヘッダー
-header{
-  position: fixed; 
-  top: 0px;          
-  left: 0px;     
-  width: 100%; 
-}
+
 
 // メイン部分
 .index-page{
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 100px);
   overflow: scroll;
+  position: relative;
+}
+
+.prolog-toppage{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .texts{
   padding: 30px;
   display: grid;
   margin: 30px 0px;
-  width: 80%;
+  width: 100%;
 }
 .text{
   margin: 0 auto;
 }
 .textonly{
   margin: 0 auto;
-  display: flex;
   padding-bottom: 20px;
+  display: flex;
+  width: 500px;
 }
 .text__image{
-  height: 55px;
-  width: 55px;
+  height: 100px;
+  width: 100px;
   border: solid 1px;
 }
 .text__title{
@@ -49,7 +51,7 @@ header{
 // 新規投稿ページ
 .new-page{
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 68px);
   background-image: url("new2.jpg");
   background-repeat: no-repeat;
 }
@@ -64,35 +66,74 @@ header{
   flex-direction: column;
   height: 500px;
   float: right;
-  margin-right: 50px;
+  margin-right: 100px;
 }
 .new-page-title{
   margin: 30px 0px 0px 40px;
+}
+form{
+  margin-top: 20px;
 }
 .form__title{
   width: 600px;
   height: 50px;
   margin-bottom: 30px;
+  border-radius: 5px;
 }
 .form__image{
   width: 600px;
   height: 50px;
   margin-bottom: 30px;
+  border-radius: 5px;
 }
 .form__text{
   width: 600px;
   height: 300px;
   margin-bottom: 30px;
+  border-radius: 5px;
 }
 
 // 詳細ページ
 .showpage{
-  margin-top: 70px;
   text-align: center;
+  overflow: scroll;
+}
+.prologtitle{
+  font-size: 30px;
+}
+img {
+  width: 400px;
+  height: 300px;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  // margin: 20px auto;
 }
 
-.prologimage{
-  width: 300px;
-  height: 300px;
-  background-repeat: no-repeat;
+// #lightbox .lb-container {
+//   height: 100%;
+//   width: 100%;
+// }
+// #lightbox .lb-outerContainer {
+//   height: 100%;
+//   width: 100%;
+// }
+// #lightbox .lb-nav{
+//   height: 100%;
+//   width: 100%;
+// }
+.unko{
+  width: 600px;
+  height: 600px;
+}
+
+
+.prologtitle{
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.prologtext{
+  text-align: center;
+  font-size: 25px;
 }

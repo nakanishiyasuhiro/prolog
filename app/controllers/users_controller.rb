@@ -1,10 +1,24 @@
 class UsersController < ApplicationController
+  
+  def show
+    @user = User.find(params[:id])
+    @programminglogs = @user.programminglogs
+  end
+
+  def create
+    if current_user.create(user_params)
+      respond_to programminglogs_path
+    else
+      render :new_user_registration_path
+    end
+  end
+  
   def edit
   end
 
   def update
     if current_user.update(user_params)
-      redirect_to programminglogs_path
+      respond_to programminglogs_path
     else
       render :edit
     end
