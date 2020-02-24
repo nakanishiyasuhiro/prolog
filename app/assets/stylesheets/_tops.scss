@@ -41,3 +41,35 @@
 .header__right--btn:hover{
   text-decoration: none;
 }
+
+button {
+  /* スタイルをリセット */
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.header__right--btn {
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgb(135, 198, 235);
+  padding: 10px 16px;
+  position: relative;
+  top: 0;
+  transition: background-color 0.2s;
+}
+.header__right--btn:hover {
+  background-color: #64b5f6;
+}
+
+.header__right--btn:active {
+  background-color: #2196f3;
+  top: 1px;
+}

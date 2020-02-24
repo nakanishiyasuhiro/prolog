@@ -4,12 +4,13 @@ class ProgramminglogsController < ApplicationController
   before_action :set_programminglog, only: [:edit, :show]
 
   def index
-    @programminglogs = Programminglog.includes(:user)
+    @programminglogs = Programminglog.includes(:user).order("created_at DESC")
   end
   def new
     @programminglog = Programminglog.new
   end
   def create
+    # binding.pry
     Programminglog.create(programminglog_params)
     redirect_to programminglogs_path
   end
@@ -37,7 +38,7 @@ class ProgramminglogsController < ApplicationController
   
   private
   def programminglog_params
-    params.require(:programminglog).permit(:title, :image, :text).merge(user_id: current_user.id)
+    params.require(:programminglog).permit(:title, :image, :text, :tag_list).merge(user_id: current_user.id)
   end
 
   def set_programminglog
