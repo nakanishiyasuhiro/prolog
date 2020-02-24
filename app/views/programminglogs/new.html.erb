@@ -5,7 +5,9 @@
 
 <%= form_with model: @programminglog, class: :form, local: true do |f|%>
   <%= f.text_field :title, placeholder: :タイトル, class: :form__title %>
-  <%= f.text_field :image, placeholder: :画像, class: :form__image %>
+  <%= f.file_field :image, placeholder: :画像, class: :form__image, id: "file" %>
+  <%= f.label :tag_list, '' %>
+  <%= text_field_tag 'programminglog[tag_list]', @programminglog.tag_list, :class => "form-control" %>
   <%= f.text_area :text, placeholder: :本文, class: :form__text %>
   <%= f.submit '投稿する', class: :submit__btn %>
 <% end %>
