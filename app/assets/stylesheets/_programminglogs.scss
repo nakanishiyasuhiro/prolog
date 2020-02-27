@@ -1,13 +1,53 @@
 // 投稿ページ
 
-
+// 戻るアイコン
+.fa-arrow-circle-left:before{
+  color: black;
+  font-size: 40px;
+}
 
 // メイン部分
 .index-page{
   width: 100%;
-  height: calc(100vh - 100px);
+  height: 100vh;
   overflow: scroll;
-  // position: relative;
+  padding-top: 90px;
+}
+
+// ヘッダー
+header{
+  position: fixed;
+  z-index: 1;
+  width: 100%; 
+}
+.navbar-brand{
+  font-size: 20px;
+}
+.search{
+  justify-content: end;
+  text-align: center;
+  width: 350px;
+}
+.search-form{
+  width: 340px;
+  display: flex;
+  justify-content: end;
+}
+.search-input{
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.search-btn{
+  padding: 90px;
+  width: 80px;
+  margin-left: 10px;
+}
+.search-form input[type="submit"]{
+  width: 110px;
+}
+.search-box{
+  display: flex;
 }
 
 .prolog-toppage{
@@ -24,16 +64,17 @@
 }
 .text{
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
 }
 .textonly{
   margin: 0 auto;
   padding-bottom: 20px;
-  display: flex;
   width: 500px;
 }
 .text__image{
-  height: 100px;
-  width: 100px;
+  height: 300px;
+  width: 300px;
   border: solid 1px;
   background-size: cover;
 }
@@ -45,12 +86,36 @@
 .text__right{
   padding: 0 15px;
 }
+.content__right__top--title{
+  font-size: 15px;
+  color: black;
+}
+.content__right__top--title:hover{
+  text-decoration: none;
+}
+.user__name{
+  display: flex;
+  padding-bottom: 5px;
+}
+.user__name img{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+.content__right__bottom--username{
+  line-height: 50px;
+  margin-left: 8px;
+}
+.good{
+  justify-content: end;
+  padding-top: 5px;
+}
 // header a{
 //   margin-right: 10px;
 // }
 header a:hover{
   padding: 10px 0;
-  background-color: rgb(135, 235, 230);
   border: 1px solid black;
   border-radius: 5px;
   color: black;
@@ -75,8 +140,6 @@ header a:hover{
 .navbar-brand{
   font-size: 30px;
 }
-
-
 
 
 // 新規投稿ページ
@@ -127,58 +190,11 @@ form{
   margin-bottom: 30px;
 }
 
-label{
-  width: 100%;
+// 編集ページ
+.index-page_edit{
+  margin: 0 auto;
+  padding-top: 30px;
 }
-// .tag_label{
-//   width: 100%;
-// }
-
-// 詳細ページ
-.showpage{
-  text-align: center;
-  overflow: scroll;
-}
-.prologtitle{
-  font-size: 30px;
-}
-img {
-  width: 400px;
-  height: 300px;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
-  // margin: 20px auto;
-}
-
-// #lightbox .lb-container {
-//   height: 100%;
-//   width: 100%;
-// }
-// #lightbox .lb-outerContainer {
-//   height: 100%;
-//   width: 100%;
-// }
-// #lightbox .lb-nav{
-//   height: 100%;
-//   width: 100%;
-// }
-.unko{
-  width: 600px;
-  height: 600px;
-}
-
-
-.prologtitle{
-  padding-top: 20px;
-  font-size: 20px;
-  text-align: center;
-}
-.prologtext{
-  text-align: center;
-  font-size: 25px;
-}
-
 
 // 検索ページ
 .search-page__main{

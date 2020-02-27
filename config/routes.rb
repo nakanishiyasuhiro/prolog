@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     :sessions => 'users/sessions'   
   } 
   resources :programminglogs do
+    resources :likes, only: [:create, :destroy]
       collection do
         get 'search'
       end

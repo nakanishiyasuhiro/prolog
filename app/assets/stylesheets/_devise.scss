@@ -1,0 +1,81 @@
+.signups{
+  width: 100%;
+  height: calc(100vh - 108px);
+  font-family: sans-serif;
+  padding-top: 50px;
+  overflow: scroll;
+  // background-image: url(image.png);
+  // background-position: right;
+  background-color: rgba(255,255,255,0.7);
+}
+.signupcontent{
+  background-color: #EEEEEE;
+  border-radius: 10px;
+  width: 400px;
+  margin: 0 auto;
+}
+.signuptitle{
+  font-size: 80px;
+  text-align: center;
+}
+.signuptext{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+.field{
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: #fff;
+  background-color: #EEEEEE;
+}
+
+#user_name,#user_email,#user_password,#user_password_confirmation{
+  width: 100%;
+  border-radius: 5px;
+}
+.actions{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+input[type="submit"]{
+  border-radius: 4px;
+  color: #fff;
+  background-color: #337ab7;
+  padding: 8px 18px;
+  transition: background-color 0.2s;
+  border: 1px solid;
+  // margin: 10px 15px;
+  width: 200px;
+  font-size: 15px;
+}
+input[type="submit"]:hover{
+  background-color: #64b5f6;
+  color: white;
+  text-decoration: none;
+}
+.signups a{
+  display:block;
+  text-align: center;
+  margin-top: 20px;
+}
+.new_btn input[type="submit"]{
+  background-color: #228B22;
+  font-size: 15px;
+}
+.new_btn input[type="submit"]:hover{
+  background-color: #5cb85c;
+}
+.password_btn input[type="submit"]{
+  background-color: #AA0000;
+  font-size: 15px;
+}
+
+#error_explanation{
+  font-size: 15px;
+  padding: 0 40px;
+}
+#error_explanation h2{
+  font-size: 20px;
+}

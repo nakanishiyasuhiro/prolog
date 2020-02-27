@@ -1,13 +1,18 @@
-<div class="prologtitle">
-  <%= @user.name %>さんの投稿一覧
-</div>
-
-<div class="texts">
-<div class="text">
-<% @programminglogs.each do |prolog| %>
-   <% @programminglogs.each do |prolog|%>
-    <%= render partial: "programminglogs/prolog", locals: { prolog: prolog } %>
-  <% end %>
+<%= link_to programminglogs_path do %>
+  <i class="fas fa-arrow-circle-left"></i>
 <% end %>
-</div>
+<div class="index-page_uesr">
+  <div class="prologtitle_user">
+    <%= @user.name %>さんの投稿一覧
+  </div>
+  <div class="user__img">
+    <img src=<%= @user.image %> class = "icon_image">
+  </div>
+  <div class="texts">
+    <div class="text">
+      <% @programminglogs.each do |prolog|%>
+        <%= render partial: "programminglogs/prolog", locals: { prolog: prolog } %>
+      <% end %>
+    </div>
+  </div>
 </div>
