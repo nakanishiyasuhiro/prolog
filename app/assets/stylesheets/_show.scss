@@ -1,0 +1,102 @@
+// 詳細ページ
+.index-page_show{
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+}
+.showpage{
+  text-align: center;
+  overflow: scroll;
+  padding-bottom: 40px;
+}
+.back-icon{
+  width: 800px;
+  margin: 30px auto;
+}
+.prologimage{
+  
+}
+img {
+  width: 800px;
+  height: 500px;
+  border-radius: 5px;
+}
+.prolog-overrall{
+  width: 600px;
+  margin: 0 auto;
+  text-align: start;
+}
+.prologtitle{
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.prologdate{
+  margin: 10px 0;
+}
+.prolog{
+  margin-bottom: 10px;
+}
+.prolog a:hover{
+  color: wheat;
+}
+.prolog__edit{
+  border: 1px solid skyblue;
+  background-color: skyblue;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+.prolog__delete{
+  border: 1px solid skyblue;
+  background-color: skyblue;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.prologtext{
+  font-size: 15px;
+}
+.goodbtn{
+  display: flex;
+  position: relative;
+}
+.goodbtn p{
+  line-height: 40px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.goodbtn input[type="submit"]{
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: 5px;
+  
+}
+
+// unko{
+//   width: 600px;
+//   height: 600px;
+// }
+
+// ユーザー詳細ページ
+.prologtitle_user{
+  text-align: center;
+  padding: 20px;
+  overflow: scroll;
+  font-size: 20px;
+  font-weight: bold;
+}
+.user__img{
+  text-align: center;
+  margin-top: 20px;
+}
+.user__img img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+}

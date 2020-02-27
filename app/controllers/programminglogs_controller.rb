@@ -15,6 +15,7 @@ class ProgramminglogsController < ApplicationController
     redirect_to programminglogs_path
   end
   def show
+    @like = Like.new
   end
   def search
     @programminglogs = Programminglog.search(params[:keyword])

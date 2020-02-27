@@ -2,39 +2,16 @@
 @import "users";
 @import "tops";
 @import "programminglogs";
-@import "sign_up";
-@import "log_in";
+@import "devise";
+@import "show";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 
-header{
-  position: fixed;
-  z-index: 1;
-  width: 100%; 
-}
-.navbar-brand{
-  font-size: 20px;
-}
-.search{
-  justify-content: end;
-  text-align: center;
-  width: 400px;
-}
-.search-form{
-  width: 400px;
-}
-.search-input{
-  width: 300px;
-  padding: 10px;
-  border-radius: 5px;
-}
-.search-btn{
-  padding: 90px;
-  width: 80px;
-}
 #wrapper{
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
 .left{
   font-size: 20px;
@@ -58,6 +35,7 @@ footer{
   position: absolute;
   left: 0;
   bottom: 0;
+  position: fixed;
 }
 footer p{
   margin-bottom: 0;
