@@ -1,0 +1,14 @@
+<div class="user-member">
+  <%= link_to programminglogs_path do %>
+      <i class="fas fa-arrow-circle-left"></i>
+  <% end %>
+  <h1>ユーザー一覧</h1>
+  <div class="user-members">
+    <% @users.each do |user| %>
+      <div class="members">
+        <a href="/users/<%= user.id %>"><%= user.name %></a>
+        <div class="user__image" style="background-image: url(<%= user.image %>);"></div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.user-member{
+  width: 100%;
+  height: 100vh;
+}
+.user-member h1{
+  text-align: center;
+}
+.user-members{
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  text-align: center;
+  font-size: 25px;
+  gap: 80px;
+  padding: 90px 150px;
+}
+.members{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.user__image{
+  background-size: cover;
+  width: 328px;
+  height: 328px;
+  border-radius: 5px;
+}
