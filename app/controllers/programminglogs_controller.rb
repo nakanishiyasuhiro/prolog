@@ -1,6 +1,6 @@
 class ProgramminglogsController < ApplicationController
 
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
   before_action :set_programminglog, only: [:edit, :show]
 
   def index
