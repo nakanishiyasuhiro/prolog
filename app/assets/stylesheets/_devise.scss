@@ -1,6 +1,6 @@
 .signups{
   width: 100%;
-  height: calc(100vh - 108px);
+  height: 100%;
   font-family: sans-serif;
   padding-top: 50px;
   overflow: scroll;
@@ -13,6 +13,7 @@
   border-radius: 10px;
   width: 400px;
   margin: 0 auto;
+  box-shadow: 10px 10px 10px grey;
 }
 .signuptitle{
   font-size: 80px;

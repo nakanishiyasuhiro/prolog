@@ -25,6 +25,19 @@
   font-size: 100px;
 }
 
+@keyframes typing { from { width: 10px; } }
+@keyframes caret { 50% { border-color: transparent; } }
+
+.top-page-title p{
+font-family: monospace; 
+width: 8ch;
+border-right: .00em solid;
+overflow: hidden;
+font-size: 1em;
+white-space: nowrap;
+animation: typing 6s steps(11, end), caret .7s step-end infinite;
+}
+
 .top-page-text{
   font-size: 20px;
   margin: 50px 0;
