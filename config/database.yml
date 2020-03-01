@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: prolog_production
-  username: prolog
-  password: <%= ENV['PROLOG_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
