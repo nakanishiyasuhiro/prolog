@@ -12,6 +12,7 @@
   height: 100vh;
   overflow: scroll;
   padding-top: 90px;
+  background-image: url(colku.jpg);
 }
 
 // ヘッダー
@@ -49,7 +50,10 @@ header{
 .search-box{
   display: flex;
 }
-
+.fa-sign-out-alt{
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
 .prolog-toppage{
   font-size: 40px;
   text-align: center;
@@ -61,6 +65,7 @@ header{
   display: grid;
   margin: 30px 0px;
   width: 100%;
+  
 }
 .text{
   margin: 0 auto;
@@ -69,9 +74,27 @@ header{
 }
 .textonly{
   margin: 0 auto;
-  padding-bottom: 20px;
-  width: 500px;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: all 0.6s ease 0s;
+  position: relative;
 }
+.textonly::before{
+  content:"";
+  background:url(http://hibana.xii.jp/icon/pin/004/c18.png) no-repeat;/* 背景画像にピンを、繰り返してほしくないのでno-repeat指定 */
+  width:50px;
+  height:50px;
+  top:-23px;
+  left:130px;
+  position:absolute;
+}
+.textonly:hover{
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+
 .text__image{
   height: 300px;
   width: 300px;
@@ -84,7 +107,8 @@ header{
   font-weight: bold;
 }
 .text__right{
-  padding: 0 15px;
+  padding: 10px 10px;
+  background-color: white;
 }
 .content__right__top--title{
   font-size: 15px;
@@ -112,30 +136,28 @@ header{
   justify-content: end;
   padding-top: 5px;
 }
-// header a{
-//   margin-right: 10px;
-// }
+
 header a:hover{
-  padding: 10px 0;
-  border: 1px solid black;
-  border-radius: 5px;
-  color: black;
-  text-decoration: none;
+  // padding: 10px 0;
+  // border: 1px solid black;
+  // border-radius: 5px;
+  // color: black;
+  // text-decoration: none;
 }
 .user_nav{
   line-height: 46px;
   font-size: 20px;
-  padding-left: 20px;
 }
 .user_nav a{
   color: gray;
 }
 .user_nav a:hover{
   text-decoration: none;
-  padding: 10px;
+  color: black;
+  // padding: 10px;
 }
 .nav-user{
-  padding-left: 20px;
+  // padding-left: 20px;
 }
 .search-btn:hover{
   background-color: rgb(135, 235, 230);
@@ -149,7 +171,7 @@ header a:hover{
 // 新規投稿ページ
 .new-page{
   width: 100%;
-  height: calc(100vh - 68px);
+  height: 100%;
   background-image: url("new2.jpg");
   background-repeat: no-repeat;
 }
