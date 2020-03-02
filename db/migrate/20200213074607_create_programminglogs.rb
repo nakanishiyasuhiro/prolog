@@ -3,7 +3,7 @@ class CreateProgramminglogs < ActiveRecord::Migration[5.2]
     create_table :programminglogs do |t|
       t.string :title
       t.text :text
-      t.references :user, foreign_key:true
+      t.integer :user_id
       t.timestamps
     end
   end
