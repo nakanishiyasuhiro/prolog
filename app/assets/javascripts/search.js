@@ -17,16 +17,20 @@ $(function() {
                         ${prolog.created_at}
                       </div>
                       <div class="user__name">
-                        <img src=${prolog.images} class = "icon_image">
+                        <img src=${prolog.user_image} class = "icon_image">
                         <div class="content__right__bottom--username">
                           <a href = "/users/${prolog.id}" data-method="get" class: "content__right__bottom--userName--btn">${prolog.name}</a>
                         </div>
                       </div>
-                      ${prolog.tag_list}
-                      <span style="background-color: #EEEEEE; color: #666666; border-radius: 5px; padding: 5px">${prolog.tag}</span>
+                      $('span').each(function(){
+                        if($(this).text() > 100000) return false;
+                        var html = $(this).html().replace(/(\d*)/g,"<b>$1</b>");
+                      $(this).html(html);
+                    })
+                      <span style="background-color: #EEEEEE; color: #666666; border-radius: 5px; padding: 5px">${prolog.tags.name}</span>
                       <div class="good">
                         <i class="far fa-thumbs-up"></i>
-                        ${prolog.liked_users}
+                        ${prolog.likes}
                       </div>
                     </div>
                   </div>
