@@ -20,9 +20,15 @@ header{
   position: fixed;
   z-index: 1;
   width: 100%; 
+  height: 90px;
+  background-image: url(soto.jpg);
+  display: flex;
 }
 .navbar-brand{
   font-size: 20px;
+}
+.navbar{
+  display: flex;
 }
 .search{
   justify-content: end;
