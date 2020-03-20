@@ -1,7 +1,9 @@
 <div class="user-member">
-  <%= link_to programminglogs_path do %>
-      <i class="fas fa-arrow-circle-left"></i>
-  <% end %>
+  <div class="back-icon">
+    <%= link_to programminglogs_path do %>
+    <i class="fas fa-arrow-left"></i>
+    <% end %>
+  </div> 
   <h1>ユーザー一覧</h1>
   <div class="user-members">
     <% @users.each do |user| %>

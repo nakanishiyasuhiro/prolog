@@ -2,85 +2,129 @@
 .index-page_show{
   width: 100%;
   height: 100vh;
-  overflow: scroll;
-}
-.showpage{
-  text-align: center;
-  overflow: scroll;
-  padding-bottom: 40px;
-}
-.back-icon{
-  width: 800px;
-  margin: 30px auto;
-}
-.prologimage{
-  
-}
-img {
-  width: 800px;
-  height: 500px;
-  border-radius: 5px;
-}
-.prolog-overrall{
-  width: 600px;
-  margin: 0 auto;
-  text-align: start;
-}
-.prologtitle{
-  padding-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-.prologdate{
-  margin: 10px 0;
-}
-.prolog{
-  margin-bottom: 10px;
-}
-.prolog a:hover{
-  color: wheat;
-}
-.prolog__edit{
-  border: 1px solid skyblue;
-  background-color: skyblue;
-  color: black;
-  padding: 5px;
-  border-radius: 5px;
-}
-.prolog__delete{
-  border: 1px solid skyblue;
-  background-color: skyblue;
-  color: black;
-  padding: 5px;
-  border-radius: 5px;
+  background-image: url(colku.jpg);
+
+  .back-icon{
+    font-size: 35px;
+    margin: 25px;
+    a{
+      color: white;
+    }
+  }
+
+  .showpage{
+    overflow: scroll;
+    padding-bottom: 40px;
+    display: flex;
+
+    .prologimage{
+      width: 50%;
+      padding-left: 20px;
+      
+      img{
+        width: 800px;
+        height: 500px;
+        border-radius: 5px;
+        padding:7px;
+        border:1px solid #ccc;
+        background:#fff;
+        box-shadow: 1px 1px 5px rgba(20,20,20,0.2);
+      }
+    }
+
+    .prolog-overrall{
+      width: 50%;
+      text-align: start;
+      margin-right: 30px;
+      margin-left: 20px;
+      height: 650px;
+      overflow: scroll;
+      background-image: url(hakusi.jpg);
+      background-size: cover;
+
+      .prolog-all{
+        padding-left: 50px;
+
+        .prologtitle{
+          padding-top: 20px;
+          font-size: 40px;
+          font-weight: bold;
+          margin: 10px 0;
+        }
+
+        .prologdate{
+          margin: 10px 0;
+        }
+
+        .prolog{
+          margin-bottom: 10px;
+          a:hover{
+            color: wheat;
+          }
+          .prolog__edit{
+            border: 1px solid skyblue;
+            background-color: skyblue;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+          }
+          .prolog__delete{
+            border: 1px solid skyblue;
+            background-color: skyblue;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+          }
+        }
+
+        .prologtext{
+          font-size: 20px;
+          border: solid 1px;
+          margin-right: 20px;
+          height: 420px;
+        }
+
+        .goodbtn{
+          display: flex;
+          padding-left: 422px;
+          position: relative;
+          p{
+            line-height: 40px;
+            margin-right: 10px;
+            font-size: 20px;
+          }
+          input[type="submit"]{
+            width: 150px;
+            text-align: center;
+            padding: 5px;
+            position: absolute;
+            top: 5px;
+          }
+        }
+      }
+    }   
+  }
 }
 
-.prologtext{
-  font-size: 15px;
-}
-.goodbtn{
-  display: flex;
-  position: relative;
-}
-.goodbtn p{
-  line-height: 40px;
-  margin-right: 10px;
-  font-size: 20px;
-}
-.goodbtn input[type="submit"]{
-  width: 150px;
-  text-align: center;
-  padding: 5px;
-  position: absolute;
-  top: 5px;
-  
+.prologimage::before{
+  content:"";
+  background: url(http://hibana.xii.jp/icon/pin/001/1.png) no-repeat;
+  width:50px;
+  height:50px;
+  top: 81px;
+  left: 337px;
+  position:absolute;
 }
 
-// unko{
-//   width: 600px;
-//   height: 600px;
-// }
+.prolog-overrall::before{
+  content:"";
+  background: url(http://hibana.xii.jp/icon/pin/001/1.png) no-repeat;
+  width: 50px;
+  height: 50px;
+  top: 86px;
+  right: 339px;
+  position:absolute;
+}
 
 // ユーザー詳細ページ
 .prologtitle_user{

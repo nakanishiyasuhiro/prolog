@@ -1,5 +1,12 @@
 // 投稿ページ
 
+@font-face {
+  font-family: 'HuiFontP109';
+  src: url('font/HuiFontP109.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // 戻るアイコン
 .fa-arrow-circle-left:before{
   color: black;
@@ -55,12 +62,11 @@ header{
           }
           .search-btn:hover{
             background-color: rgb(135, 235, 230);
-          }  
-        }      
+          }
+        }
       } 
     }
   }
-  
 }
 
 
@@ -96,13 +102,8 @@ header{
   transform: rotate(2deg);
   margin: 0 auto;
   text-align: center;
+  font-family: 'HuiFontP109', sans-serif;
 }
-
-.textonly::before{
-  content:"";
-  background:url(http://hibana.xii.jp/icon/pin/004/c18.png) no-repeat;/* 背景画像にピンを、繰り返してほしくないのでno-repeat指定 */
-}
-
     
 
 .texts{
@@ -128,7 +129,7 @@ header{
 }
 .textonly::before{
   content:"";
-  background:url(http://hibana.xii.jp/icon/pin/004/c18.png) no-repeat;/* 背景画像にピンを、繰り返してほしくないのでno-repeat指定 */
+  background: url(http://hibana.xii.jp/icon/pin/001/1.png) no-repeat;/* 背景画像にピンを、繰り返してほしくないのでno-repeat指定 */
   width:50px;
   height:50px;
   top:-23px;
