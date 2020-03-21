@@ -1,12 +1,14 @@
 class LikesController < ApplicationController
   def create
-    @like = current_user.likes.create(programminglog_id: params[:programminglog_id])
-    redirect_back(fallback_location: root_path)
+    @like = Like.create(user_id: current_user.id, programminglog_id: params[:programminglog_id])
+    @likes = Like.where(programminglog_id: params[:programminglog_id])
+    @programminglogs = Programminglog.all
   end
 
   def destroy
-    @like = Like.find_by(programminglog_id: params[:programminglog_id], user_id: current_user.id)
-    @like.destroy
-    redirect_back(fallback_location: root_path)
+    like = Like.find_by(user_id: current_user.id, programminglog_id: params[:programminglog_id])
+    like.destroy
+    @likes = Like.where(programminglog_id: params[:programminglog_id])
+    @programminglogs = Programminglog.all
   end
 end

@@ -39,6 +39,46 @@ header{
   width: 340px;
   display: flex;
   justify-content: end;
+  background-attachment: scroll;
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    .nav-nav{
+      display: flex;
+      line-height: 90px;
+      .choice{
+        margin-left: 20px;
+        font-size: 18px;
+        a{
+          color: white;
+          text-decoration: none;
+        }
+      }
+      .user_nav{
+        line-height: 90px;
+      }
+    }
+    .search{
+      justify-content: end;
+      text-align: center;
+      width: 350px;
+      padding-top: 20px;
+      .search-box{
+        display: flex;
+        .search-form{
+          width: 340px;
+          display: flex;
+          justify-content: end;
+          input[type="submit"]{
+            width: 110px;
+          }
+          .search-btn:hover{
+            background-color: rgb(135, 235, 230);
+          }
+        }
+      } 
+    }
+  }
 }
 .search-input{
   width: 300px;
@@ -56,6 +96,7 @@ header{
 .search-box{
   display: flex;
 }
+
 .fa-sign-out-alt{
   padding-right: .5rem;
   padding-left: .5rem;
