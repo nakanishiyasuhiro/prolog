@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   has_many :programminglogs
-  has_many :likes
+  has_many :likes, dependent: :destroy
   has_many :liked_programminglogs, through: :likes, source: :programminglog
   def already_liked?(programminglog)
     self.likes.exists?(programminglog_id: programminglog.id)
