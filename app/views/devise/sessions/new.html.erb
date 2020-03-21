@@ -9,10 +9,14 @@
         <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
       </div>
 
+      <% if @sns_id.present? %>
+        <%= hidden_field_tag :sns_auth, true %>
+      <% else %>
       <div class="field">
         <%= f.label :パスワード %><br />
         <%= f.password_field :password, autocomplete: "current-password" %>
       </div>
+      <% end %>
 
       <% if devise_mapping.rememberable? %>
         <div class="field">
@@ -25,7 +29,8 @@
         <%= f.submit "ログイン" %>
       </div>
     <% end %>
-
+    <%= link_to 'Facebookでログイン', user_facebook_omniauth_authorize_path, method: :post %>
+    <%= link_to 'Googleでログイン', user_google_oauth2_omniauth_authorize_path, method: :post %>
     <%= render "devise/shared/links" %>
   </div>
 </div>

@@ -89,3 +89,6 @@ gem 'mini_magick'
 gem 'acts-as-taggable-on', '~> 6.0'
 gem 'rails-i18n', '~> 5.1'
 gem 'font-awesome-sass'
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+gem "omniauth-rails_csrf_protection"
