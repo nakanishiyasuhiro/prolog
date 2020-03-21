@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_25_130413) do
+ActiveRecord::Schema.define(version: 2020_03_20_025427) do
 
   create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "programminglog_id"
@@ -29,6 +29,15 @@ ActiveRecord::Schema.define(version: 2020_02_25_130413) do
     t.datetime "updated_at", null: false
     t.text "image"
     t.index ["text"], name: "index_programminglogs_on_text", length: 32
+  end
+
+  create_table "sns_credentials", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "provider"
+    t.string "uid"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_sns_credentials_on_user_id"
   end
 
   create_table "taggings", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -75,5 +84,6 @@ ActiveRecord::Schema.define(version: 2020_02_25_130413) do
 
   add_foreign_key "likes", "programminglogs"
   add_foreign_key "likes", "users"
+  add_foreign_key "sns_credentials", "users"
   add_foreign_key "taggings", "tags"
 end
