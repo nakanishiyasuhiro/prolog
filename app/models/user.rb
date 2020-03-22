@@ -6,11 +6,14 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   has_many :programminglogs
+
   has_many :likes, dependent: :destroy
   has_many :liked_programminglogs, through: :likes, source: :programminglog
+  
   def already_liked?(programminglog)
     self.likes.exists?(programminglog_id: programminglog.id)
   end
+
   has_many :sns_credentials
   def self.from_omniauth(auth)
     sns = SnsCredential.where(provider: auth.provider, uid: auth.uid).first_or_create
