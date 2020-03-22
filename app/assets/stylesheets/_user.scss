@@ -1,7 +1,7 @@
 .user-member{
   width: 100%;
   height: auto;
-  background-image: image-url("index.jpeg");
+  background-image: image-url("colku.jpg");
   .back-icon{
     font-size: 35px;
     margin: 25px;
@@ -35,4 +35,36 @@
   width: 328px;
   height: 328px;
   border-radius: 0px 0px 5px 5px;
+}
+
+// ユーザー詳細ページ
+.index-page_user{
+  .back-icon{
+    font-size: 35px;
+    margin: 25px;
+    a{
+      color: white;
+    }
+  }
+}
+
+.prologtitle_user{
+  text-align: center;
+  padding: 20px;
+  overflow: scroll;
+  font-size: 20px;
+  font-weight: bold;
+}
+.user__img{
+  text-align: center;
+  margin-top: 20px;
+}
+.user__img img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+.index-page_user{
+  background-image: image-url("colku.jpg");
 }

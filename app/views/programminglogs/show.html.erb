@@ -32,14 +32,9 @@
           <div class="prologtext">
             <%= simple_format @programminglog.text %>
           </div>
-        <div class="goodbtn">
-          <p><i class="far fa-thumbs-up"></i>: <%= @programminglog.likes.count %></p>
-          <% if current_user.already_liked?(@programminglog) %>
-            <%= button_to 'いいねを取り消す', programminglog_like_path(@programminglog), method: :delete %>
-          <% else %>
-            <%= button_to 'いいね', programminglog_likes_path(@programminglog) %>
-          <% end %>
-        </div>
+          <div id="likes_buttons_<%= @programminglog.id %>">
+            <%= render partial: 'likes/like', locals: { programminglog: @programminglog, likes: @likes} %>
+          </div>
     </div>
   </div>
 

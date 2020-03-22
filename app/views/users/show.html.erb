@@ -1,7 +1,9 @@
 <div class="index-page_user">
-  <%= link_to programminglogs_path do %>
-    <i class="fas fa-arrow-circle-left"></i>
-  <% end %>
+  <div class="back-icon">
+    <%= link_to programminglogs_path do %>
+    <i class="fas fa-arrow-left"></i>
+    <% end %>
+  </div> 
   <div class="index-page_uesr">
     <div class="prologtitle_user">
       <%= @user.name %>さんの投稿一覧
