@@ -1,6 +1,10 @@
 class LikesController < ApplicationController
 
-  before_action :set_programminglog
+  before_action :set_programminglog, only: [:create, :destroy]
+
+  def index
+    @all_ranks = Programminglog.find(Like.group(:programminglog_id).order('count(programminglog_id) desc').limit(3).pluck(:programminglog_id))
+  end
 
   def create
     @like = Like.create(user_id: current_user.id, programminglog_id: params[:programminglog_id])
