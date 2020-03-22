@@ -1,8 +1,17 @@
 <div class="likes_text">
+  <div class="back-icon">
+    <%= link_to programminglogs_path do %>
+    <i class="fas fa-arrow-left"></i>
+    <% end %>
+  </div> 
+  <div class="likes_rank">
+    <i class="fas fa-heart"></i> good ranking
+  </div>
   <div class="texts">
     <div class="text">
       <% @all_ranks.each.with_index(1) do |prolog, i|%>
         <div class="textonly">
+        <span class="ranking">第<%= i %>位</span>
           <div class="text__left">
             <div class="text__image" style="background-image: url(<%= prolog.image %>);"></div>
           </div>
