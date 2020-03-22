@@ -22,14 +22,9 @@ $(function() {
                           <a href = "/users/${prolog.id}" data-method="get" class: "content__right__bottom--userName--btn">${prolog.name}</a>
                         </div>
                       </div>
-                      $('span').each(function(){
-                        if($(this).text() > 100000) return false;
-                        var html = $(this).html().replace(/(\d*)/g,"<b>$1</b>");
-                      $(this).html(html);
-                    })
                       <span style="background-color: #EEEEEE; color: #666666; border-radius: 5px; padding: 5px">${prolog.tags.name}</span>
                       <div class="good">
-                        <i class="far fa-thumbs-up"></i>
+                      <i class="fas fa-heart"></i>
                         ${prolog.likes}
                       </div>
                     </div>

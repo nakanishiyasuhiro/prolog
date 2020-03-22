@@ -84,21 +84,16 @@
           height: 420px;
         }
 
-        .goodbtn{
-          display: flex;
-          padding-left: 422px;
-          position: relative;
-          p{
-            line-height: 40px;
-            margin-right: 10px;
-            font-size: 20px;
+        .vertical_like{
+          font-size: 20px;
+          color: black;
+          text-align: end;
+          margin: 20px 20px 0px 0px;
+          i{
+            text-decoration: none;
           }
-          input[type="submit"]{
-            width: 150px;
-            text-align: center;
-            padding: 5px;
-            position: absolute;
-            top: 5px;
+          span{
+            text-decoration: none;
           }
         }
       }

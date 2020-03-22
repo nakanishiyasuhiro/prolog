@@ -8,6 +8,6 @@ json.array! @programminglogs do |prolog|
   json.name prolog.user.name
   json.user_image prolog.user.image.url
   json.tags prolog.tags.first
-  json.likes prolog.liked_users.count
+  json.likes prolog.likes_count
   json.user_sign_in current_user
 end
