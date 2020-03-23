@@ -1,15 +1,17 @@
-<div class="index-page">
-  <div class="index-page__main">
+<div class="search_index">
+  <div class="index-page">
+    <div class="index-page__main">
 
-    <div class="prolog-toppage">
-      <p>Prolog一覧</p>
-    </div>
+      <div class="prolog-toppage">
+        <p>Prolog一覧</p>
+      </div>
 
-    <div class="texts">
-      <div class="text">
-        <% @programminglogs.each do |prolog|%>
-          <%= render partial: "prolog", locals: { prolog: prolog } %>
-        <% end %>
+      <div class="texts">
+        <div class="text">
+          <% @programminglogs.each do |prolog|%>
+            <%= render partial: "prolog", locals: { prolog: prolog } %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
