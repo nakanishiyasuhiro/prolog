@@ -12,10 +12,14 @@
 @import "font-awesome";
 
 
+body{
+  min-height: 100%;
+}
+
 #wrapper{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 .left{
   font-size: 20px;

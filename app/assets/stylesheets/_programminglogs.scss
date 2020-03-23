@@ -19,6 +19,8 @@
   height: auto;
   padding-top: 120px;
   background-image: image-url("colku.jpg");
+  min-height: 100%;
+  overflow: auto;
 }
 
 // ヘッダー

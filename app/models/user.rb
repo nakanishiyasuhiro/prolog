@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   has_many :programminglogs
+  has_many :comments
 
   has_many :likes, dependent: :destroy
   has_many :liked_programminglogs, through: :likes, source: :programminglog
