@@ -1,6 +1,6 @@
 .likes_text{
   background-image: image-url("colku.jpg");
-  height: 100%;
+  height: auto;
   .back-icon{
     font-size: 35px;
     margin: 25px;
@@ -33,6 +33,7 @@
   font-size: 25px;
   position: absolute;
   z-index: 3;
-  background-color: gold;
+  background-color: darkgoldenrod;
+  padding: 5px;
   }
 }
