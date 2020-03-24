@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     omniauth_callbacks: 'users/omniauth_callbacks',
   } 
   resources :programminglogs do
+    resources :comments, only: :create
     resources :likes, only: [:index, :create, :destroy]
       collection do
         get 'search'

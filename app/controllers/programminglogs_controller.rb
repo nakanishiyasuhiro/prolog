@@ -16,6 +16,8 @@ class ProgramminglogsController < ApplicationController
   end
   def show
     @like = Like.new
+    @comment = Comment.new
+    @comments = @programminglog.comments.includes(:user)
   end
   def search
     @programminglogs = Programminglog.search(params[:keyword])
