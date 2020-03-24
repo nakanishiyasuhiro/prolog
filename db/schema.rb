@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_23_132944) do
+ActiveRecord::Schema.define(version: 2020_03_24_055909) do
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
     t.integer "programminglog_id"
-    t.text "text"
+    t.text "text", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -30,12 +30,12 @@ ActiveRecord::Schema.define(version: 2020_03_23_132944) do
   end
 
   create_table "programminglogs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "title"
-    t.text "text"
-    t.integer "user_id"
+    t.string "title", null: false
+    t.text "text", null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "image"
+    t.text "image", null: false
     t.integer "likes_count"
     t.index ["text"], name: "index_programminglogs_on_text", length: 32
   end
