@@ -1,74 +1,96 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# prolog DB設計
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-# Qiita DB設計
-## usersテーブル
-|Column|Type|Options|
-|------|----|-------|
-|email|string|null: false|
-|password|string|null: false|
-|username|string|null: false|
-### Association
-- has_many :prologs
-- has_many :comments
-
-## prologsテーブル
+## programminglogsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |title|string|null: false|
 |text|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false|
+|image|text|null: false|
 ### Association
 - belongs_to :user
 - has_many :comments
-- has_many :prologs_tags
-- has_many  :tags, through: :prologs_tags
+- has_many :likes, dependent: :destroy
 
-## tagsテーブル
+## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|name|string|null: false|
+|email|string|null: false|
+|password|string|null: false|
+|image|string|
 ### Association
-- has_many :prologs_tags
-- has_many  :prologs,  through: :prologs_tags
-
-## prologs_tagsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|prolog_id|integer|null: false, foreign_key: true|
-|tag_id|integer|null: false, foreign_key: true|
-### Association
-- belongs_to :prolog
-- belongs_to :tag
+- has_many :programminglogs, dependent: :destroy
+- has_many :comments
+- has_many :likes, dependent: :destroy
+- has_many :liked_programminglogs, through: :likes, source: :programminglog
 
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
-|prolog_id|integer|null: false, foreign_key: true|
+|user_id|integer|
+|programminglog_id|integer|
 ### Association
-- belongs_to :prolog
+- belongs_to :programminglog, optional: true
+- belongs_to :user  
+
+## likesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|programminglog_id|bigint|
+|user_id|bigint|
+### Association
+- belongs_to :programminglog, counter_cache: :likes_count
 - belongs_to :user
+
+## sns_credentialsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|provider|string|
+|uid|string|
+|user_id|bigint|
+### Association
+- belongs_to :user, optional: true
+
+## taggingsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|tag_id|integer|
+|taggable_type|string|
+|taggable_id|integer|
+|tagger_type|string|
+|tagger_id|integer|
+|context|string|
+
+## tagsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|
+|taggings_count|integer|
+### Association
+
+
+# Name（リポジトリ/プロジェクト/OSSなどの名前）
+ 
+Prolog
+ 
+# Features
+ 
+このアプリは、初心者から中級者の方が、qiitaよりも気軽にプログラミングの知識やエラー解決方法などを記録するアプリです。
+ 
+# Requirement
+ 
+* Rails 5.2.4.1
+* ruby 2.5.1
+ 
+# Author
+ 
+作成情報を列挙する
+ 
+* 作成者
+* 所属
+* E-mail
+ 
