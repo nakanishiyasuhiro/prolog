@@ -1,6 +1,7 @@
 class CommentsController < ApplicationController
   def create
-    Comment.create(comment_params)
+    @comment = Comment.create(comment_params)
+    redirect_to "/programminglogs/#{@comment.programminglog.id}"
   end
 
   private
@@ -8,3 +9,4 @@ class CommentsController < ApplicationController
     params.require(:comment).permit(:text).merge(user_id: current_user.id, programminglog_id: params[:programminglog_id])
   end
 end
+

@@ -35,7 +35,29 @@
           <div id="likes_buttons_<%= @programminglog.id %>">
             <%= render partial: 'likes/like', locals: { programminglog: @programminglog, likes: @likes} %>
           </div>
+          <div class="container">
+            <% if current_user %>
+              <%= form_with(model: [@programminglog, @comment], local: true) do |f| %>
+                <%= f.text_area :text, placeholder: "コメントを入力してください。", class: "comments" %>
+                <div class="c_btn">
+                <%= f.submit "コメント", class: "comment_btn" %>
+                </div>
+              <% end %>
+            <% else %>
+              <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+            <% end %>
+          </div>
+          <div class="comments">
+            <h5>＜コメント一覧＞</h5>
+            <% if @comments %>
+              <% @comments.each do |comment| %>
+                <p>
+                  <strong><%= link_to comment.user.name, "/users/#{comment.user_id}" %>：</strong>
+                  <%= comment.text%>
+                </p>
+              <% end %>
+            <% end %>
+          </div>
     </div>
   </div>
-
 </div>

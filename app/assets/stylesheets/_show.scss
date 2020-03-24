@@ -82,6 +82,7 @@
           border: solid 1px;
           margin-right: 20px;
           height: 420px;
+          padding: 10px;
         }
 
         .vertical_like{
@@ -94,6 +95,24 @@
           }
           span{
             text-decoration: none;
+          }
+        }
+        .container{
+          .comments{
+            margin: 20px 0 5px;
+            width: 595px;
+            height: 100px;
+            padding: 10px;
+          }
+          .c_btn{
+            text-align: right;
+            margin: 5px 18px 10px;
+            .comment_btn{
+              
+            }
+          }
+          .user_comment{
+
           }
         }
       }
