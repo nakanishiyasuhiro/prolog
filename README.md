@@ -57,7 +57,7 @@ test@gmail
 現在、プログラミングスクールの同期数人にテスト的に使ってもらって、欲しい機能や改善点をフィードバックしてもらっています。
 
 
-# DEMO(gifで動画や写真を貼って、ビューのイメージを掴んでもらいます)
+# DEMO
 * TOPページ
 [![Image from Gyazo](https://i.gyazo.com/6d2c9c36952e6771bb6600c8f2d3e070.png)](https://gyazo.com/6d2c9c36952e6771bb6600c8f2d3e070)
 
