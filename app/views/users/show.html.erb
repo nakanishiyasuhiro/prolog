@@ -11,6 +11,9 @@
     <div class="user__img">
       <img src=<%= @user.image %> class = "icon_image">
     </div>
+    <%= link_to edit_user_registration_path do %>
+    <p class="user_edit_btn">ユーザー編集</p>
+    <% end %>
     <div class="texts">
       <div class="text">
         <% @programminglogs.each do |prolog|%>

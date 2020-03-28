@@ -1,6 +1,6 @@
 .signups{
   width: 100%;
-  height: 100%;
+  height: 100vh;
   font-family: sans-serif;
   padding-top: 50px;
   overflow: scroll;
@@ -29,6 +29,25 @@
   margin-bottom: 10px;
   background: #fff;
   background-color: #EEEEEE;
+}
+
+.password_now{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.update_btn{
+  margin-bottom: 20px;
+}
+
+.user_edit_btn{
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+
+.user_edit_btn:hover{
+  text-decoration: none;
 }
 
 #user_name,#user_email,#user_password,#user_password_confirmation{
