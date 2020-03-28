@@ -43,7 +43,7 @@ http://52.68.235.100/
 * テストアカウント
 
 メールアドレス
-test@gmail
+test-user@gmail.com
 
 パスワード
 000000
