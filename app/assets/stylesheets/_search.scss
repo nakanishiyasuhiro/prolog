@@ -1,9 +1,16 @@
 .search_index{
+  background-image: image-url("colku.jpg");
+  .back-icon{
+    font-size: 35px;
+    margin: 25px;
+    a{
+      color: white;
+    }
+  }
   .index-page{
     width: 100%;
     height: auto;
     padding-top: 120px;
-    background-image: image-url("colku.jpg");
     min-height: 100%;
     overflow: auto;
   }
