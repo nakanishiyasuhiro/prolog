@@ -78,7 +78,7 @@ test-user@gmail.com
 [![Image from Gyazo](https://i.gyazo.com/9813d241d0fc81720098cf7171fa7cf7.jpg)](https://gyazo.com/9813d241d0fc81720098cf7171fa7cf7)
 
 * いいねランキング！
-[![Image from Gyazo](https://i.gyazo.com/64a1dc2f6350644bf1b03ea466216120.jpg)](https://gyazo.com/64a1dc2f6350644bf1b03ea466216120)
+[![Image from Gyazo](https://i.gyazo.com/753e90b5580f32f49de6c4d4daf33a32.jpg)](https://gyazo.com/753e90b5580f32f49de6c4d4daf33a32)
 
 * コメント機能
 [![Image from Gyazo](https://i.gyazo.com/6b7e6c208069b8f637d4c0c5556122bd.png)](https://gyazo.com/6b7e6c208069b8f637d4c0c5556122bd)
