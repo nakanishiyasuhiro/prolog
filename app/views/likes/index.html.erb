@@ -12,7 +12,7 @@
       <% @all_ranks.each.with_index(1) do |prolog, i|%>
         <div class="textonly">
           <%= link_to(programminglog_path(prolog.id), class: 'list-content') do %>
-          <span class="ranking">第<%= i %>位</span>
+          <span class="ranking" id="rank<%= i %>">第<%= i %>位</span>
             <div class="text__left">
               <div class="text__image" style="background-image: url(<%= prolog.image %>);"></div>
             </div>
