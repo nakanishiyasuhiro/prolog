@@ -38,7 +38,7 @@ JQueryを用いたインクリメンタルサーチ機能を実装しました�
 
 * デプロイ先
 
-http://www.programminglogs.tech/
+https://www.programminglogs.tech/
 
 * テストアカウント
 
