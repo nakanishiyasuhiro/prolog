@@ -95,13 +95,13 @@
           border: solid 1px;
           border-radius: 40px;
           padding: 5px 10px;
-          :hover{
+          &:hover{
             text-decoration: none;
           }
-          i{
+          .vertical_like i:hover{
             text-decoration: none;
           }
-          span{
+          .vertical_like span:hover{
             text-decoration: none;
           }
         }
@@ -147,4 +147,3 @@
   right: 339px;
   position:absolute;
 }
-
