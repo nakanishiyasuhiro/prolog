@@ -26,14 +26,16 @@
 }
 
 @keyframes typing { from { width: 0; } }
-@keyframes caret { 50% { border-color: transparent; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
 
 .top-page-title p{
   font-family: monospace; 
-	width: 7.7ch;
+  border-right: .04em solid;
+  margin: 0 auto;
+	width: 5.5ch;
 	overflow: hidden;
 	white-space: nowrap;
-	animation: typing 6s steps(13);
+  animation: typing 5s steps(7);
 }
 
 .top-page-text{
