@@ -110,6 +110,11 @@ input[type="submit"]:hover{
   border-radius: 3px;
 }
 
+.facebook:hover{
+  text-decoration: none;
+  color: white;
+}
+
 .google{
   background-color: #f05a5a;
   color: white;
@@ -117,4 +122,39 @@ input[type="submit"]:hover{
   width: 200px;
   padding: 7px;
   border-radius: 3px;
+}
+
+.google:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.new_session{
+  background-color: gray;
+  color: white;
+  margin: 0 auto;
+  width: 200px;
+  padding: 7px;
+  border-radius: 3px;
+  margin-bottom: -22px;
+}
+
+.new_registration{
+  background-color: gray;
+  color: white;
+  margin: 0 auto;
+  width: 200px;
+  padding: 7px;
+  border-radius: 3px;
+  margin-bottom: -20px;
+}
+
+.new_password{
+  background-color: gray;
+  color: white;
+  margin: 0 auto;
+  width: 200px;
+  padding: 7px;
+  border-radius: 3px;
+  font-size: 10px;
 }
