@@ -12,7 +12,7 @@
   background-color: #EEEEEE;
   border-radius: 10px;
   width: 400px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   box-shadow: 10px 10px 10px grey;
 }
 .signuptitle{
@@ -99,4 +99,22 @@ input[type="submit"]:hover{
 }
 #error_explanation h2{
   font-size: 20px;
+}
+
+.facebook{
+  background-color: #2851A3;
+  color: white;
+  margin: 0 auto;
+  width: 200px;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+.google{
+  background-color: #f05a5a;
+  color: white;
+  margin: 0 auto;
+  width: 200px;
+  padding: 7px;
+  border-radius: 3px;
 }
