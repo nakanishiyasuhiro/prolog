@@ -30,7 +30,7 @@
           </div>
         <% end %>
           <div class="prologtext">
-            <%= simple_format @programminglog.text %>
+            <%= text_url_to_link(h(@programminglog.text)).html_safe %>
           </div>
           <div id="likes_buttons_<%= @programminglog.id %>">
             <%= render partial: 'likes/like', locals: { programminglog: @programminglog, likes: @likes} %>
