@@ -13,5 +13,6 @@ Rails.application.routes.draw do
       end
     end
   resources :users, except: [:new]
+  resources :expositions, only: [:index]
 end
 
