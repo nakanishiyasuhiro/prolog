@@ -40,8 +40,8 @@
 }
 .exposition-image2{
   background-image: image-url("image2.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border: 1px solid;
   width: 500px;
   height: 444px;
@@ -58,8 +58,8 @@
 }
 .exposition-image4{
   background-image: image-url("image4.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   border: 1px solid;
   width: 500px;
   height: 444px;box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
