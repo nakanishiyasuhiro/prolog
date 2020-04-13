@@ -82,7 +82,7 @@ test-user@gmail.com
 [![Image from Gyazo](https://i.gyazo.com/857f7a155161f8673cb2aadab23a8b75.png)](https://gyazo.com/857f7a155161f8673cb2aadab23a8b75)
 
 * 投稿一覧ページ
-[![Image from Gyazo](https://i.gyazo.com/3782c5482c883c07cdd6388275a0d225.jpg)](https://gyazo.com/3782c5482c883c07cdd6388275a0d225)
+[![Image from Gyazo](https://i.gyazo.com/1efd142d039c9ad676f684afd140147f.jpg)](https://gyazo.com/1efd142d039c9ad676f684afd140147f)
 
 * 検索機能
 [![Image from Gyazo](https://i.gyazo.com/7b7b4b67fcda760cef67e232b3ad70de.gif)](https://gyazo.com/7b7b4b67fcda760cef67e232b3ad70de)
