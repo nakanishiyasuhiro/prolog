@@ -85,16 +85,16 @@ test-user@gmail.com
 [![Image from Gyazo](https://i.gyazo.com/1efd142d039c9ad676f684afd140147f.jpg)](https://gyazo.com/1efd142d039c9ad676f684afd140147f)
 
 * 検索機能
-[![Image from Gyazo](https://i.gyazo.com/7b7b4b67fcda760cef67e232b3ad70de.gif)](https://gyazo.com/7b7b4b67fcda760cef67e232b3ad70de)
+[![Image from Gyazo](https://i.gyazo.com/f992834d20112cdda94f093eed76f517.gif)](https://gyazo.com/f992834d20112cdda94f093eed76f517)
 
 * 新規投稿
 [![Image from Gyazo](https://i.gyazo.com/f2dc4acc9f703bbadc21ac54644f8753.jpg)](https://gyazo.com/f2dc4acc9f703bbadc21ac54644f8753)
 
 * ユーザー一覧
-[![Image from Gyazo](https://i.gyazo.com/9813d241d0fc81720098cf7171fa7cf7.jpg)](https://gyazo.com/9813d241d0fc81720098cf7171fa7cf7)
+[![Image from Gyazo](https://i.gyazo.com/71c12b694b7ba6b793d5615fdfe478be.jpg)](https://gyazo.com/71c12b694b7ba6b793d5615fdfe478be)
 
 * いいねランキング！
-[![Image from Gyazo](https://i.gyazo.com/753e90b5580f32f49de6c4d4daf33a32.jpg)](https://gyazo.com/753e90b5580f32f49de6c4d4daf33a32)
+[![Image from Gyazo](https://i.gyazo.com/218c7087e2c5b6378cbc8c334c8a8bad.jpg)](https://gyazo.com/218c7087e2c5b6378cbc8c334c8a8bad)
 
 * 初めて使う方へ
 [![Image from Gyazo](https://i.gyazo.com/ed3397450aea358fcc3310ff2d75c759.jpg)](https://gyazo.com/ed3397450aea358fcc3310ff2d75c759)
