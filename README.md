@@ -1,7 +1,4 @@
-# README
-
-# アプリ名
-「Prolog」
+# アプリ名  「Prolog」
 
 # 概要
 
@@ -174,5 +171,5 @@ Ruby・Ruby on Rails・JavaScript・jQuery・GitHub・AWS
 |------|----|-------|
 |name|string|
 |taggings_count|integer|
-### Association
+
 
