@@ -67,8 +67,8 @@ test-user@gmail.com
 [![Image from Gyazo](https://i.gyazo.com/6d2c9c36952e6771bb6600c8f2d3e070.png)](https://gyazo.com/6d2c9c36952e6771bb6600c8f2d3e070)
 
 * ユーザー登録・ログイン機能
-[![Image from Gyazo](https://i.gyazo.com/8720f5c602fbfaa6f95c21040bc3e98e.png)](https://gyazo.com/8720f5c602fbfaa6f95c21040bc3e98e)
-[![Image from Gyazo](https://i.gyazo.com/d3444971f50293eb6999a3e3d3c42d60.png)](https://gyazo.com/d3444971f50293eb6999a3e3d3c42d60)
+[![Image from Gyazo](https://i.gyazo.com/c5eaee83c130275b79a7b6385cd9f290.png)](https://gyazo.com/c5eaee83c130275b79a7b6385cd9f290)
+[![Image from Gyazo](https://i.gyazo.com/857f7a155161f8673cb2aadab23a8b75.png)](https://gyazo.com/857f7a155161f8673cb2aadab23a8b75)
 
 * 投稿一覧ページ
 [![Image from Gyazo](https://i.gyazo.com/3782c5482c883c07cdd6388275a0d225.jpg)](https://gyazo.com/3782c5482c883c07cdd6388275a0d225)
